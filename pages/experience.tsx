@@ -15,12 +15,12 @@ const Experience: NextPage = () => {
   const [com, setCom] = useState([])
 
   const getdata = async () => {
-    await fetch('http://localhost:3000/api/exp').then(async (res) => {
+    await fetch('/api/exp').then(async (res) => {
       const parsedRes = await res.json()
       setExp(parsedRes)
     })
 
-    await fetch('http://localhost:3000/api/com').then(async (res) => {
+    await fetch('/api/com').then(async (res) => {
       const parsedRes = await res.json()
       setCom(parsedRes)
     })
