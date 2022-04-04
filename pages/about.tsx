@@ -12,9 +12,13 @@ import {
   SiMongodb,
   SiMysql,
   SiDocker,
+  SiKubernetes,
+  SiRedis,
+  SiApachecassandra,
   SiHeroku,
   SiGit,
-  SiJava
+  SiJava,
+  SiPostgresql
 } from 'react-icons/si'
 
 const HomePage: NextPage = () => {
@@ -86,6 +90,10 @@ const HomePage: NextPage = () => {
             <h1>Docker</h1>
           </li>
           <li>
+            <SiKubernetes className='text-5xl text-blue-500' />
+            <h1>Kubernetes</h1>
+          </li>
+          <li>
             <SiHeroku className='text-5xl text-purple-500' />
             <h1>Heroku</h1>
           </li>
@@ -102,6 +110,18 @@ const HomePage: NextPage = () => {
           <li>
             <SiMongodb className='text-5xl text-green-500' />
             <h1>MongoDB</h1>
+          </li>
+          <li>
+            <SiApachecassandra className='text-5xl text-blue-500' />
+            <h1>Cassandra</h1>
+          </li>
+          <li>
+            <SiRedis className='text-5xl text-red-500' />
+            <h1>Redis</h1>
+          </li>
+          <li>
+            <SiPostgresql className='text-5xl text-blue-400' />
+            <h1>Postgresql</h1>
           </li>
           <li>
             <SiMysql className='text-5xl text-blue-500' />
