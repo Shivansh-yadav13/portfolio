@@ -2,9 +2,15 @@ import type { NextPage } from "next";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 
+type Link = {
+  title: string;
+  link: string;
+};
+
 type Exp = {
   title: string;
   desc: string;
+  links?: Link[];
   img: string;
   w?: number;
   h?: number;
@@ -32,7 +38,7 @@ const Experience: NextPage = () => {
 
   return (
     <div className="my-5">
-      <div className="w-fit m-auto flex flex-col gap-5">
+      <div className="w-fit m-auto flex flex-col gap-5 mx-20">
         <h1 className="text-center pb-4 font-bold text-4xl">
           Work & Experience
         </h1>
@@ -50,6 +56,15 @@ const Experience: NextPage = () => {
               <div className="flex flex-col gap-5">
                 <h1 className="text-2xl">{expEl.title}</h1>
                 <p>{expEl.desc}</p>
+                {expEl.links ? (
+                  <li>
+                    {expEl.links?.map((l) => (
+                      <a className="text-blue-500" href={l.link}>{l.title}</a>
+                    ))}
+                  </li>
+                ) : (
+                  ""
+                )}
               </div>
             </div>
           ))

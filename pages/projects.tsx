@@ -29,7 +29,7 @@ const Projects: NextPage = () => {
   return (
     <div className="my-5">
       <div className="w-fit m-auto flex flex-col gap-5">
-        <h1 className="text-center pb-4 font-bold text-4xl">Projects</h1>
+        <h1 className="text-center pb-4 font-bold text-4xl">Open Source Projects</h1>
         {proj ? (
           proj.map((projEl: Proj, key) => (
             <div className="border-2 rounded-md p-5 flex gap-10" key={key}>
@@ -75,7 +75,7 @@ const Projects: NextPage = () => {
           </div>
         )}
       </div>
-      <h1 className="text-center m-10 p-10">More projects on Github.</h1>
+      <h1 className="text-center m-10 p-10">More projects on <a className="underline" href="https://github.com/shivansh-yadav13">My Github</a>.</h1>
     </div>
   );
 };

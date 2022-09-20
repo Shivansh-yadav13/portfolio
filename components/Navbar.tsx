@@ -20,7 +20,7 @@ const Navbar: NextPage = () => {
       </Link>
     </ul>
     <ul className='flex justify-end w-1/4'>
-      <a className='text-gray-500 text-xl border-gray-200 border-2 p-2 rounded-md transition ease-in-out hover:text-black' href='https://docs.google.com/document/d/1VHeCvrpx4Fkolm1GfezMiJnvLkK3o134ff19GcjbN84/edit?usp=sharing' target='_blank' rel='noreferrer'>Resume</a>
+      <a className='text-gray-500 text-xl border-gray-200 border-2 p-2 rounded-md transition ease-in-out hover:text-black' href='https://drive.google.com/file/d/1rP-LJVkaIOT7oYfSYMaRvW394VfEuJmS/view?usp=sharing' target='_blank' rel='noreferrer'>Resume</a>
     </ul>
   </nav>
 }

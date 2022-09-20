@@ -1,8 +1,14 @@
 import { NextApiResponse, NextApiRequest } from 'next'
 
+type Link = {
+  title: string
+  link: string
+}
+
 type Data = {
   title: string
   desc: string
+  links?: Link[]
   img: string
   w?: Number
   h?: Number
@@ -10,9 +16,10 @@ type Data = {
 
 const resData: Data[] = [
   {
-    title: "Casbin",
-    desc: "Casbin is an Open-Source authorization library, I'm Contributing to Casbin's Node.js project. Learning & Contributing.",
-    img: "casbin.png"
+    title: "Google Summer of Code 2022",
+    desc: "Google Summer of Code is a global, online program focused on bringing new contributors into open source software development.",
+    links: [{title: "GSoC Final Work Report", link: "https://gist.github.com/Shivansh-yadav13/0a303de392b49f077c1e88e725a11449"}],
+    img: "gsoc_logo.png"
   },
   {
     title: "HacktoberFest 2021",
@@ -22,6 +29,7 @@ const resData: Data[] = [
   {
     title: "MLH Local Hack Day Learn & Build 2022",
     desc: "Participated in both the events with guildmates, completed daily challenges by creating apps on Devpost & attend live sessions.",
+    links: [{title: "Projects Build", link: "https://devpost.com/yadavshivansh?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"}],
     img: "mlh.png"
   },
   {

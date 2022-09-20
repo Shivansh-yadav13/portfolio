@@ -10,6 +10,16 @@ type Data = {
 
 const resData: Data[] = [
   {
+    title: "Casbin",
+    desc: "Casbin is an Open-Source authorization library, I'm Contributing to Casbin's projects. Learning & Contributing.",
+    img: "casbin.png"
+  },
+  {
+    title: "Kubesimplify",
+    desc: "Kubesimplify is on a mission to breakdown complicated concepts of cloud native into an easy to understand manner through blogs and video content. Since I like learning about Cloud Native tech, I try to contribute to Kubesimplify.",
+    img: "kubesimplify_logo.png"
+  },
+  {
     title: "Community Classroom",
     desc: "The first community I joined, explored many new things and got to know about Open-Source.",
     img: "cc.png"
